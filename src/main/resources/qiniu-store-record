@@ -1,0 +1,15 @@
+公用：
+bootstrap.css
+<link rel="stylesheet" type="text/css" href="http://7xnvev.com1.z0.glb.clouddn.com/bootstrap.min.css" />
+
+animate.css
+<link rel="stylesheet" type="text/css" href="http://7xnvev.com1.z0.glb.clouddn.com/animate.min.css" />
+
+jquery-1.11.1.min.js
+<script type="text/javascript" src="http://7xnvev.com1.z0.glb.clouddn.com/jquery-1.11.1.min.js"></script>
+
+首页：
+<img src="http://7xnvev.com1.z0.glb.clouddn.com/shanshui.jpg" />
+<img src="http://7xnvev.com1.z0.glb.clouddn.com/startsky.jpg" />
+
+
