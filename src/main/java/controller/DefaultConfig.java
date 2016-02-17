@@ -2,8 +2,6 @@ package controller;
 
 import java.util.Properties;
 
-import uames.util.JedisUtil;
-
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -16,12 +14,14 @@ import com.jfinal.plugin.c3p0.C3p0Plugin;
 import com.jfinal.render.ViewType;
 import com.sun.xml.internal.fastinfoset.stax.events.Util;
 
+import uames.util.JedisUtil;
+
+@SuppressWarnings("restriction")
 public class DefaultConfig extends JFinalConfig {
     
     private static Properties properties;
     
-    @SuppressWarnings("restriction")
-	public static String getPropery(String key) {
+    public static String getPropery(String key) {
         String url = properties.getProperty(key);
         String result="";
         if(!Util.isEmptyString(url)){
@@ -80,5 +80,6 @@ public class DefaultConfig extends JFinalConfig {
     public void configRoute(Routes me) {
         me.add("/", MainController.class);
         me.add("/member", MemberController.class);
+        me.add("/plan", PlanController.class);
     }
 }
